@@ -18,18 +18,18 @@ export default class ChartComponent extends React.Component {
         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
         datasets: [{
             label: 'Earned Money',
-            backgroundColor: 'rgba(255, 110, 67, 0.5)',
+            backgroundColor: 'rgba(255, 110, 67, 0.2)',
             borderColor: 'rgb(253, 95, 49)',
             data: [0, 10, 5, 2, 20, 35, 45]            }, 
             {
                 label: 'Paid Money',
-                backgroundColor: 'rgba(95, 255, 67, 0.5)',
+                backgroundColor: 'rgba(95, 255, 67, 0.2)',
                 borderColor: 'rgb(0, 255, 0)',
                 data: [0, 30, 15, 5, 25, 30, 10]
             }, 
             {
                 label: 'Saved Money',
-                backgroundColor: 'rgb(67, 207, 255, 0.5)',
+                backgroundColor: 'rgb(67, 207, 255, 0.2)',
                 borderColor: 'rgb(0, 0, 255)',
                 data: [40, 45, 35, 25, 15, 40, 20]
             }]

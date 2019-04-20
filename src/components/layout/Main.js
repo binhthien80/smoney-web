@@ -1,23 +1,16 @@
-<<<<<<< HEAD
 import React, { Component } from "react"
 import styled from "styled-components"
 import StatsComponent from './StatsComponent/Stat'
 import theme from '../theme'
 import Chart from './Chart/index'
-
-=======
-import React, { Component } from 'react'
-import styled from 'styled-components'
-
-import theme from '../theme'
 import HistoryList from './HistoryList'
->>>>>>> issues/3
 
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   padding: 1rem;
   background-color: ${theme.color.secondary};
+  min-height: 100vh;
 `
 
 const Board = styled.div`
@@ -48,11 +41,7 @@ const Stats = styled.div`
   margin: 8px;
   box-sizing: border-box;
   padding: 1rem;
-<<<<<<< HEAD
   background: ${theme.color.primary}
-=======
-  background: rgba(50, 50, 50, 0.8);
->>>>>>> issues/3
 `
 
 class Main extends Component {
@@ -65,16 +54,10 @@ class Main extends Component {
           <Stat><StatsComponent/></Stat>
           <Stat><StatsComponent/></Stat>
         </Stats>
-<<<<<<< HEAD
-        <Board>Smoney Board</Board>
-        <Board><Chart></Chart></Board>
-
-=======
         <Board>
           <HistoryList />
         </Board>
-        <Board>Chart</Board>
->>>>>>> issues/3
+        <Board><Chart></Chart></Board>
       </Wrapper>
     )
   }
