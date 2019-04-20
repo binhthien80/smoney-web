@@ -2,6 +2,7 @@ import React from 'react';
 import { Row, Col } from 'antd';
 import Menu from './layout/Menu/index';
 import Main from './layout/Main';
+import TopNav from './layout/TopNav'
 
 const Layout = props => {
     return (
@@ -11,6 +12,7 @@ const Layout = props => {
             <Menu />
           </Col>
           <Col xs={24} lg={20}>
+            <TopNav />
             <Main />
           </Col>
         </Row>

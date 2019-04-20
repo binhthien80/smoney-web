@@ -15,5 +15,16 @@ export default {
       medium: '1rem',
       small: '.825rem',
       tiny: '.75rem',
+  },
+  button: {
+    borderSearch: '#5e676f'
+  },
+  flex: (direction, jContent, aItems) => {
+    return `
+      display: flex;
+      flex-direction: ${direction};
+      justify-content: ${jContent};
+      align-items: ${aItems};
+    `
   }
 }
