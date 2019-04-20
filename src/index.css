@@ -10,3 +10,15 @@ body {
   /* -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
 }
+.ant-dropdown-menu {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  border-radius: 0 !important;
+}
+.ant-dropdown-menu-item {
+  background-color: #151d33;
+  color: #fff !important;
+}
+.ant-dropdown-menu-item:hover {
+  background-color: #151d33 !important;
+}

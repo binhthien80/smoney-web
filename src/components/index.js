@@ -1,10 +1,9 @@
 import React from 'react';
 import { Row, Col } from 'antd';
-import Menu from './layout/Menu';
+import Menu from './layout/Menu/index';
 import Main from './layout/Main';
 
 const Layout = props => {
-    console.log(11111, typeof props.children);
     return (
       <div>
         <Row>
