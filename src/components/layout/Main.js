@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import styled from "styled-components"
-
+import StatsComponent from './StatsComponent/Stat'
+import theme from '../theme'
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -30,7 +31,7 @@ const Stat = styled.div`
   margin: 8px;
   box-sizing: border-box;
   padding: 1rem;
-  background: rgba(50, 50, 50, .8);
+  background: ${theme.color.primary}
 `
 
 class Main extends Component {
@@ -38,10 +39,10 @@ class Main extends Component {
     return (
       <Wrapper>
         <Stats>
-          <Stat>One</Stat>
-          <Stat>Two</Stat>
-          <Stat>Three</Stat>
-          <Stat>Four</Stat>
+          <Stat><StatsComponent/></Stat>
+          <Stat><StatsComponent/></Stat>
+          <Stat><StatsComponent/></Stat>
+          <Stat><StatsComponent/></Stat>
         </Stats>
         <Board>Smoney Board</Board>
         <Board>Chart</Board>
