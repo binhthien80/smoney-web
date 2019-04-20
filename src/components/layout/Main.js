@@ -6,6 +6,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  background: ${theme.color.secondary}
 `
 
 const Board = styled.div`
