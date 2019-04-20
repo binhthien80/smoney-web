@@ -2,6 +2,9 @@ import React, { Component } from "react"
 import styled from "styled-components"
 import StatsComponent from './StatsComponent/Stat'
 import theme from '../theme'
+import Chart from './Chart/index'
+
+
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -9,7 +12,6 @@ const Wrapper = styled.div`
 `
 
 const Board = styled.div`
-  background: red;
   flex-grow: 1;
   margin: 8px 0;
 `
@@ -45,7 +47,8 @@ class Main extends Component {
           <Stat><StatsComponent/></Stat>
         </Stats>
         <Board>Smoney Board</Board>
-        <Board>Chart</Board>
+        <Board><Chart></Chart></Board>
+
       </Wrapper>
     )
   }
