@@ -5,7 +5,7 @@ import theme from '../../theme';
 export const Wrapper = styled.div`
     background-color: ${theme.color.primary}
     text-align: center;
-    height: 100vh;
+    height: 100%;
     padding: 1rem;
 `
 export const StyleMenu = styled.div`
