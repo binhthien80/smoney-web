@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Menu, Icon } from 'antd';
-import { Wrapper, StyleMenu, StyleIcon, StyleDropDown } from './styled';
+import { Wrapper, StyleMenu, StyleIcon, StyleDropDown, StyleA } from './styled';
 
 class SideBar extends Component {
     render() {
@@ -21,8 +21,16 @@ class SideBar extends Component {
                         </a>
                     </StyleDropDown>
                 </StyleMenu>
+                <StyleMenu><StyleIcon type="profile" />
+                    <StyleA href="profile">Profile</StyleA>
+                </StyleMenu>
+                <StyleMenu><StyleIcon type="logout" />
+                    <StyleA href="logout">Logout</StyleA>
+                </StyleMenu>
             </Wrapper>
         );
     }
 }
+
+
 export default SideBar;
