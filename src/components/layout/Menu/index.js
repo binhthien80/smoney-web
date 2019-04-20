@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Menu, Icon } from 'antd';
+import UserInfo from './../UserInfo'
 import { Wrapper, StyleMenu, StyleIcon, StyleDropDown, StyleA } from './styled';
 
 class SideBar extends Component {
@@ -17,6 +18,7 @@ class SideBar extends Component {
         )
         return (
             <Wrapper>
+                <UserInfo />
                 <StyleMenu>
                     <StyleIcon type="menu-unfold" />
                     <StyleDropDown overlay={menu}>

@@ -15,7 +15,7 @@ export const StyleMenu = styled.div`
     margin-bottom: 10px;
 `
 export const StyleA = styled.a`
-    color: white;
+    color: ${theme.color.subText};
 `
 export const StyleIcon = styled(Icon)`
     color: ${theme.color.subText} !important;
@@ -29,7 +29,7 @@ export const StyleDropDown = styled(Dropdown)`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: ${theme.color.text} !important;
+    color: ${theme.color.subText} !important;
     padding-right: 5px;
     text-align: left;
     position: relative;
