@@ -2,8 +2,8 @@ import React from 'react'
 import { Layout } from 'antd'
 import Menu from './layout/Menu/index'
 import Main from './layout/Main'
-
 const { Sider, Content } = Layout
+
 
 export default props => (
   <Layout>
