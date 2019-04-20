@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row, Col } from 'antd';
-import Menu from '../Menu';
-import Main from '../Main';
+import Menu from './layout/Menu';
+import Main from './layout/Main';
 
 const Layout = props => {
     console.log(11111, typeof props.children);

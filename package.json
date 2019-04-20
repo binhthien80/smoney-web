@@ -14,7 +14,7 @@
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0",
     "sass": "^1.19.0",
-    "style-component": "^0.0.1"
+    "styled-components": "^4.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
