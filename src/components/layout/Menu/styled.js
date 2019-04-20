@@ -5,17 +5,23 @@ import theme from '../../theme';
 export const Wrapper = styled.div`
     background-color: ${theme.color.primary}
     text-align: center;
-    height: 100vh;
+    height: 100%;
     padding: 1rem;
 `
 export const StyleMenu = styled.div`
     display: flex;
     align-items: center;
     width: 100%;
+    margin-bottom: 10px;
+`
+export const StyleA = styled.a`
+    color: white;
 `
 export const StyleIcon = styled(Icon)`
     color: ${theme.color.subText} !important;
     font-size: 20px;
+
+    padding-right: 12px;
 `
 
 export const StyleDropDown = styled(Dropdown)`
@@ -24,7 +30,6 @@ export const StyleDropDown = styled(Dropdown)`
     justify-content: space-between;
     align-items: center;
     color: ${theme.color.text} !important;
-    padding-left: 12px;
     padding-right: 5px;
     text-align: left;
     position: relative;
