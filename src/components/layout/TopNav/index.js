@@ -1,8 +1,6 @@
 import React from 'react'
-import { Input, Menu, Dropdown, Icon, message, Avatar, Badge } from 'antd'
-import styled from 'styled-components'
-import theme from "./../../theme";
-
+import { Menu, Icon, message, Avatar, Badge } from 'antd'
+import { Search, TopNav, DropdownTopNav, ButtonTopNav, ButtonProfile } from './style'
 const onClick = ({ key }) => {
     message.info(`Click on item ${key}`);
 };
@@ -14,46 +12,6 @@ const menu = (
       <Menu.Item key="3">3rd menu item</Menu.Item>
     </Menu>
 );
-
-const Search = styled(Input.Search)`
-    width: 350px !important;
-    & > input {
-        background: transparent;
-        border: 1px solid ${theme.button.borderSearch};
-        color: ${theme.color.subText};
-    }
-    & > span > i {
-        color: ${theme.color.subText};
-        float: right;
-    }
-`
-
-const TopNav = styled.div`
-    width: calc(100% / 6 * 5);
-    background: ${theme.color.primary};
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 4rem;
-    padding: 0 1rem;
-    ${theme.flex('row', 'space-between', 'center')};
-`
-
-const DropdownTopNav = styled(Dropdown)`
-    margin: 0 1rem;
-    color: ${theme.color.subText};
-`
-
-const ButtonTopNav = styled(Dropdown)`
-    margin: 0 1rem;
-    color: ${theme.color.subText};
-`
-
-const ButtonProfile = styled(Dropdown)`
-    margin: 0 1rem;
-    color: ${theme.color.subText};
-    padding: .6rem .5rem;
-`
 
 export default () => {
     return (
