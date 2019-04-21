@@ -1,6 +1,6 @@
 import React from 'react'
 import * as STYLE from './style'
-import logo from './../../../assets/images/logo02.svg'
+import logo from './../../../assets/img/logo02.svg'
 
 export default class UserInfo extends React.Component {
     render () {
