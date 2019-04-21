@@ -8,12 +8,7 @@ export const Wrapper = styled.div`
     height: 100%;
     padding: 1rem;
 `
-export const StyleMenu = styled.div`
-    display: flex;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 10px;
-`
+
 export const StyleA = styled.a`
     color: ${theme.color.subText};
 `
@@ -24,6 +19,12 @@ export const StyleIcon = styled(Icon)`
     padding-right: 12px;
 `
 
+export const StyleMenu = styled.div`
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+`
 export const StyleDropDown = styled(Dropdown)`
     flex: 1;
     display: flex;
@@ -37,7 +38,6 @@ export const StyleDropDown = styled(Dropdown)`
         content: '';
         position: absolute;
         top: 100%;
-        left: 12px;
         height: 2px;
         width: 0;
         background-color: ${theme.color.red};
@@ -59,11 +59,11 @@ export const StyleDropDown = styled(Dropdown)`
         content: '';
         position: absolute;
         top: 100%;
-        left: 12px;
         height: 2px;
         width: 40%;
         background-color: ${theme.color.red};
         z-index: 1500;
         }
     }
+    
 `
