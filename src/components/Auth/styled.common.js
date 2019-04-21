@@ -7,13 +7,25 @@ import { Link } from 'react-router-dom'
 
 export { Logo, Input }
 
+export const Container = styled.div`
+  & > div:first-child {
+    margin-right: 16px;
+  }
+  display: flex;
+  width: 100%;
+`
+
+export const ContainerItem = styled.div`
+  flex-grow: 1;
+`
+
 export const Select = styled.select`
   width: 100%;
-  margin: 16px 0;
+  margin-bottom: 16px;
   border: 1px solid rgba(100, 100, 100, .2);
   appearance: none;
   -webkit-appearance: none;
-  padding: 8px 12px;
+  padding: 12px;
   outline: none;
 `
 
@@ -33,6 +45,7 @@ export const Wrapper = styled.div`
   width: 100vw;
   min-height: 100vh;
   display: flex;
+  mix-width: 16vw;
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
@@ -48,10 +61,10 @@ export const Form = styled.form`
     box-sizing: border-box;
     margin: 0;
   }
+  min-width: 25%;
   background-color: white;
-  padding: 1rem 2rem;
+  padding: 2rem;
   border-radius: 2px;
-  width: 26vw;
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
