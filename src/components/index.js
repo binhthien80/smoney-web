@@ -6,7 +6,6 @@ import TopNav from './layout/TopNav'
 
 const { Sider, Content } = Layout
 
-
 export default props => (
   <Layout>
     <Sider>
