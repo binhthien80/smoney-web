@@ -10,8 +10,8 @@ export default class UserInfo extends React.Component {
             <span>Manage Smoney</span>
         </STYLE.Logo>
         <STYLE.UserInfo>
-            <img src="http://www.urbanui.com/equinox/template/images/faces/face28.jpg" />
-            <p>Edwin Ballard</p>
+            <img src="https://avatars1.githubusercontent.com/u/22871320?s=460&v=4" />
+            <p>Duc Mon</p>
         </STYLE.UserInfo>
         </div>
     }
