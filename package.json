@@ -4,7 +4,9 @@
   "private": true,
   "dependencies": {
     "antd": "^3.16.3",
+    "axios": "^0.18.0",
     "chart.js": "^2.8.0",
+    "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.11",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -17,7 +19,8 @@
     "redux-saga": "^1.0.2",
     "redux-thunk": "^2.3.0",
     "sass": "^1.19.0",
-    "styled-components": "^4.2.0"
+    "styled-components": "^4.2.0",
+    "redux-devtools-extension": "^2.13.8"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -33,5 +36,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "redux-devtools-extension": "^2.13.8"
+  }
 }

@@ -3,6 +3,10 @@ import './App.css'
 import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 import routes from './routes'
 import 'antd/dist/antd.css'
+import webservices from './utils'
+import { setSESSION } from './utils/session'
+import jwt from 'jsonwebtoken'
+import {} from './actions';
 
 import Login from './components/Auth/Login'
 import Register from './components/Auth/Register'
@@ -31,7 +35,6 @@ class App extends Component {
       ...this.state.login,
       [name]: value,
     }
-
     this.setState({
       ...this.state,
       login: nextLoginState,
@@ -54,6 +57,14 @@ class App extends Component {
   handleLoginSubmit = event => {
     event.preventDefault()
     alert('Login Submited!')
+    const { login : { email, password } } = this.state;
+    const data = {email, password}
+    webservices.post('/login', data).then(rs => {
+        setSESSION('token', rs.data.accessToken)
+        let jwtObj = jwt.decode(rs.data.accessToken, {complete: true});
+        console.log(jwtObj.payload)
+        console.log(rs)
+      })
   }
 
   handleRegisterSubmit = event => {
